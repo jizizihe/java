@@ -1,30 +1,29 @@
 public class ClassObject {
-	int baijie;
+	int myclass;
 	/* creat class and object to use */
 	public ClassObject(String name) {
-		System.out.println(name+"2222");
+		System.out.println(name+"1");
 	}
 
 	public ClassObject(int ss) {
-		System.out.println("szbaijie"+ss);
+		System.out.println("myclass"+ss);
 	}
 	/* method to use  */
 	public void setTime(int time) {
-		baijie = time;
+		myclass = time;
 	}
 
 	public void getTime() {
-		System.out.println("szbaijie4444:"+baijie);	
+		System.out.println("myclass"+myclass);	
 		//return baijie;
 	}
 
 	/* main */
 	public static void main(String[] args) {
-		System.out.println("szbaijie1111");	
-		ClassObject myClassObject = new ClassObject("szbaijie");
-		ClassObject myClassObject_2 = new ClassObject(3333);
-		myClassObject.setTime(2018);
+		ClassObject myClassObject = new ClassObject("myclass");
+		ClassObject myClassObject_2 = new ClassObject(2);
+		myClassObject.setTime(3);
 		myClassObject.getTime();
-		System.out.println("szbaijie5555:"+myClassObject.baijie);
+		System.out.println("myclass"+myClassObject.myclass);
 	}	
 }
